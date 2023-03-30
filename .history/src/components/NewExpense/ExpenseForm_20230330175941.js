@@ -19,15 +19,7 @@ const ExpenseForm = () => {
     setEnteredDate(event.target.value);
   };
 
-  const submitHandler = (event) => {
-    event.preventDefault();
-
-    const expense = {
-      title: enteredTitle,
-      amount: enteredAmount,
-      date: new Date(enteredDate),
-    };
-  };
+  const submitHandler = () => {};
   return (
     <form onSubmit={submitHandler}>
       <div className="new-expense__controls">
