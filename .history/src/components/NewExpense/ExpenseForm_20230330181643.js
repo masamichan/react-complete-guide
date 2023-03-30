@@ -50,7 +50,7 @@ const ExpenseForm = () => {
             min="0.01"
             step="0.01"
             value={enteredAmount}
-            onChange={amountChangeHandler}
+            onChang={amountChangeHandler}
           />
         </div>
         <div className="new-expense__control">

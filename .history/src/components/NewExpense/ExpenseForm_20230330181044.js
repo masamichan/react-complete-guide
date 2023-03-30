@@ -22,15 +22,11 @@ const ExpenseForm = () => {
   const submitHandler = (event) => {
     event.preventDefault();
 
-    const expenseData = {
+    const expense = {
       title: enteredTitle,
       amount: enteredAmount,
       date: new Date(enteredDate),
     };
-    console.log(expenseData);
-    setEnteredTitle("");
-    setEnteredAmount("");
-    setEnteredDate("");
   };
   return (
     <form onSubmit={submitHandler}>
@@ -50,7 +46,7 @@ const ExpenseForm = () => {
             min="0.01"
             step="0.01"
             value={enteredAmount}
-            onChange={amountChangeHandler}
+            onChang={amountChangeHandler}
           />
         </div>
         <div className="new-expense__control">
