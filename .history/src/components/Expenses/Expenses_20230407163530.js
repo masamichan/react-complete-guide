@@ -36,7 +36,6 @@ const Expenses = (props) => {
           selected={filteredYear}
           onChangeFilter={filterChangeHandler}
         />
-        {expensesContent}
       </Card>
     </div>
   );
